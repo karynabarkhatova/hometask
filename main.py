@@ -27,7 +27,6 @@ def parse_cookies(cookies):
             return d
 
 
-
 if __name__ == '__main__':
     # Tests for function "parse_parameters"
     assert parse_parameters('http://example.com/?') == {}
