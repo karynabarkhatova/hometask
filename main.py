@@ -10,9 +10,6 @@ def parse_parameters(url):
         return params
 
 
-
-
-
 def parse_cookies(cookies):
     if len(cookies) < 1:
         return dict()
