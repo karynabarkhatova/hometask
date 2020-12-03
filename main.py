@@ -7,7 +7,10 @@ def parse_parameters(url):
         return dict()
     else:
         params = dict(parse.parse_qsl(parse.urlsplit(url).query))
-        return params
+        print(params)
+
+parse_parameters('https://www.google.com.ua/maps/@50.4851493,30.4721233,14z?hl=ru')
+
 
 
 def parse_cookies(cookies):
