@@ -39,7 +39,7 @@ if __name__ == '__main__':
     assert parse_parameters('https://www.google.com/search?q=facebook&oq=f&aqs=chrome.1.69i57j0i131i433j0i433j46i131i433j69i60l3j69i61.1777j0j4&client=ubuntu&sourceid=chrome&ie=UTF-8') == {'q': 'facebook', 'oq': 'f', 'aqs': 'chrome.1.69i57j0i131i433j0i433j46i131i433j69i60l3j69i61.1777j0j4', 'client': 'ubuntu', 'sourceid': 'chrome', 'ie': 'UTF-8'}
     assert parse_parameters('https://www.google.com/search?q=cats&client=ubuntu&hs=Llg&sxsrf=ALeKk03r_grGYLuOdfHVpmW2qVuKJiAJzA:1607037631159&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjQ9JTZ-bLtAhXVFXcKHRtqCdIQ_AUoAXoECBEQAw&biw=1920&bih=944') == {'q': 'cats', 'client': 'ubuntu', 'hs': 'Llg', 'sxsrf': 'ALeKk03r_grGYLuOdfHVpmW2qVuKJiAJzA:1607037631159', 'source': 'lnms', 'tbm': 'isch', 'sa': 'X', 'ved': '2ahUKEwjQ9JTZ-bLtAhXVFXcKHRtqCdIQ_AUoAXoECBEQAw', 'biw': '1920', 'bih': '944'}
     assert parse_parameters('https://news.google.com/topstories?hl=ru&gl=UA&ceid=UA:ru') == {'hl': 'ru', 'gl': 'UA', 'ceid': 'UA:ru'}
-    
+
 
     # Tests for function "parse_cookies"
     assert parse_cookies('') == {}
