@@ -45,7 +45,7 @@ if __name__ == '__main__':
     assert parse_cookies('') == {}
     assert parse_cookies('name=Dima;') == {'name': 'Dima'}
     assert parse_cookies('name=__cfduid;content=d3f8da631d8ec34d5357a3f4383a816101606942741') == {'name': '__cfduid', 'content': 'd3f8da631d8ec34d5357a3f4383a816101606942741'}
-    assert parse_cookies('') == {}
+    assert parse_cookies('name=cto_bidid;content=XuoYTF9IUU5PSkFKOTFkd1l6MTk0eHNPMUNVU3pMY1NPN2xvWjlXJTJGJTJGazIyYmd3VHRHUzdoS2VDcWM2aXlHJTJCOVh6RlZGN1JKRyUyRkFnckdLVW9sSDRZd1RrRmFBJTNEJTNE') == {'name': 'cto_bidid', 'content': 'XuoYTF9IUU5PSkFKOTFkd1l6MTk0eHNPMUNVU3pMY1NPN2xvWjlXJTJGJTJGazIyYmd3VHRHUzdoS2VDcWM2aXlHJTJCOVh6RlZGN1JKRyUyRkFnckdLVW9sSDRZd1RrRmFBJTNEJTNE'}
     assert parse_cookies('name=yandexuid;content=2738049701606514651') == {'name': 'yandexuid', 'content': '2738049701606514651'}
     assert parse_cookies('name=CONSENT;') == {'name': 'CONSENT'}
     assert parse_cookies('name=zuid;content=kgfCTjMzuoN6kdTz4Ows;domain=.zemanta.com;path=/') == {'name': 'zuid', 'content': 'kgfCTjMzuoN6kdTz4Ows', 'domain': '.zemanta.com', 'path': '/'}
